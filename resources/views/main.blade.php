@@ -10,32 +10,32 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <title>Main view</title>
+  <title>Php blog log vlog glock</title>
 </head>
 
-<body>
+<body class="m-0 p-0 w-full h-full">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <div class="flex justify-between">
-        <a class="navbar-brand" href="#">Php blog log vlog glock</a>
+  <nav class="navbar navbar-expand-lg bg-gray-800 mt-2">
+    <div class="container-fluid m-2">
+      <div>
+        <a class="navbar-brand text-white font-bold" href="#">Php blog log vlog glock</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="navbar-collapse" id="navbarNav">
+      <div id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
+          <li class="nav-item m-1 uppercase font-bold">
+            <a class="nav-link active text-white" aria-current="page" href="{{ url('/') }}">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
+          <li class="nav-item m-1 uppercase font-bold">
+            <a class="nav-link text-white" href="{{ url('/contact') }}">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/welcome') }}">Welcome</a>
+          <li class="nav-item m-1 uppercase font-bold">
+            <a class="nav-link text-white" href="{{ url('/welcome') }}">Welcome</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/about') }}">About</a>
+          <li class="nav-item m-1 uppercase font-bold">
+            <a class="nav-link text-white" href="{{ url('/about') }}">About</a>
           </li>
         </ul>
       </div>
@@ -43,17 +43,17 @@
   </nav>
 
   <!-- Container -->
-  <div class="container mt-4">
+  <div class="container mt-2">
     <div class="row">
       <!-- Sidebar -->
       <div class="col-md-3 bg-gray-800 text-white">
         <!-- Profile Section -->
         <div class="flex items-center p-4">
           <div class="mr-3">
-            <img class="w-12 h-12 rounded-full" src="path/to/your/avatar.jpg" alt="User Avatar" />
+            <img class="w-12 h-12 rounded-full" src="githubProf.jfif" alt="User Avatar" />
           </div>
           <div>
-            <h2 class="text-xl font-semibold">Username</h2>
+            <h2 class="text-xl font-semibold">Maciej</h2>
             <p class="text-sm text-gray-400">View Profile</p>
           </div>
         </div>
