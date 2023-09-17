@@ -17,10 +17,12 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Php blog log vlog glock</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="flex justify-between">
+        <a class="navbar-brand" href="#">Php blog log vlog glock</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
       <div class="navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -30,7 +32,7 @@
             <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('/welcome') }}">welcome</a>
+            <a class="nav-link" href="{{ url('/welcome') }}">Welcome</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url('/about') }}">About</a>
@@ -44,11 +46,51 @@
   <div class="container mt-4">
     <div class="row">
       <!-- Sidebar -->
-      <div class="col-md-3">
-        <ul class="list-group">
-          <li class="list-group-item">Sidebar Item 1</li>
-          <li class="list-group-item">Sidebar Item 2</li>
-          <li class="list-group-item">Sidebar Item 3</li>
+      <div class="col-md-3 bg-gray-800 text-white">
+        <!-- Profile Section -->
+        <div class="flex items-center p-4">
+          <div class="mr-3">
+            <img class="w-12 h-12 rounded-full" src="path/to/your/avatar.jpg" alt="User Avatar" />
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold">Username</h2>
+            <p class="text-sm text-gray-400">View Profile</p>
+          </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="list-none">
+          <li class="px-4 py-2 hover:bg-gray-700">
+            <a href="#" class="flex items-center text-white hover:text-gray-300">
+              <i class="fas fa-home mr-3"></i>
+              Home
+            </a>
+          </li>
+          <li class="px-4 py-2 hover:bg-gray-700">
+            <a href="#about" class="flex items-center text-white hover:text-gray-300">
+              <i class="fas fa-info-circle mr-3"></i>
+              About Us
+            </a>
+          </li>
+          <li class="px-4 py-2 hover:bg-gray-700">
+            <a href="#features" class="flex items-center text-white hover:text-gray-300">
+              <i class="fas fa-cogs mr-3"></i>
+              Our Features
+            </a>
+          </li>
+          <li class="px-4 py-2 hover:bg-gray-700">
+            <a href="#latest" class="flex items-center text-white hover:text-gray-300">
+              <i class="fas fa-envelope mr-3"></i>
+              Latest Blog Posts
+            </a>
+          </li>
+          <li class="px-4 py-2 hover:bg-gray-700">
+            <a href="#contact" class="flex items-center text-white hover:text-gray-300">
+              <i class="fas fa-envelope mr-3"></i>
+              Contact Us
+            </a>
+          </li>
+          <!-- Add more menu items as needed -->
         </ul>
       </div>
 
